@@ -1,11 +1,9 @@
-import React from "react";
-import Button from "../components/Button";
-import { GoBell, GoCloudDownload, GoDatabase } from "react-icons/go";
+import { GoBell, GoCloudDownload, GoDatabase } from 'react-icons/go';
+import Button from '../components/Button';
 
 function ButtonPage() {
-  const handleClick = () => {
-    console.log("Clicked!");
-  };
+  const handleClick = () => {};
+
   return (
     <div>
       <div>
@@ -17,29 +15,29 @@ function ButtonPage() {
           onClick={handleClick}
         >
           <GoBell />
-          Click Me
+          Click me!!
         </Button>
       </div>
       <div>
         <Button danger outline onMouseEnter={handleClick}>
           <GoCloudDownload />
-          Buy now
+          Buy Now!
         </Button>
       </div>
       <div>
         <Button warning onMouseLeave={handleClick}>
           <GoDatabase />
-          See Deal
+          See Deal!
         </Button>
       </div>
       <div>
         <Button secondary outline>
-          Hide Ads
+          Hide Ads!
         </Button>
       </div>
       <div>
         <Button primary rounded>
-          Something
+          Something!
         </Button>
       </div>
     </div>
